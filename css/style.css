@@ -1,0 +1,42 @@
+/* Палитра цветов
+#000000 - черный цвет логотипа
+#212121 - черный цвет заголовков
+#757575 - цвет текста абзацев
+#FFFFFF - белый цевет
+#2196F3 - синий цвет акцента
+#E5E5E5 - цвет заднего фона страницы */
+
+:root {
+  --title-text-colore: #212121;
+  --paragraph-text-color: #757575;
+  --accent-color: #2196f3;
+}
+.link {
+  text-decoration: none;
+}
+
+body {
+  color: var(--title-text-colore);
+}
+
+/* Шапка */
+.logo {
+  color: var(--accent-color);
+}
+.logo .part-logo {
+  color: #000000;
+}
+.navigation .link {
+  color: var(--title-text-colore);
+}
+.navigation .link:focus,
+.navigation .link:hover {
+  color: var(--accent-color);
+}
+.header-contacts .link {
+  color: var(--paragraph-text-color);
+}
+.header-contacts .link:focus,
+.header-contacts .link:hover {
+  color: var(--accent-color);
+}
