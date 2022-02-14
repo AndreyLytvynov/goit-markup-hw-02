@@ -11,6 +11,8 @@
   --title-text-colore: #212121;
   --paragraph-text-color: #757575;
   --accent-color: #2196f3;
+  --black-text-colore: #000000;
+  --white-text-color: #ffffff;
 }
 /* Убираем подчеркивание ссылок */
 .link {
@@ -36,10 +38,10 @@ body {
   letter-spacing: 0.03em;
 }
 .logo .part-logo {
-  color: #000000;
+  color: var(--black-text-colore);
 }
 .logo .part-logo-footer {
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 /* Шапка */
 .navigation .link {
@@ -73,7 +75,7 @@ body {
   color: #ffffff60;
 }
 .footer-contacts .home {
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 .footer-contacts .link:focus,
 .footer-contacts .link:hover {
@@ -88,7 +90,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-text-color);
 }
 
 /* Заголовки секций */
