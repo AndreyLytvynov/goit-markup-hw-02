@@ -84,7 +84,7 @@ body {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: #ffffff60;
+  color: rgba(255, 255, 255, 0.6);
 }
 .footer-contacts .home {
   color: var(--white-text-color);
@@ -164,19 +164,35 @@ body {
 }
 
 /* "Оформление кнопок" */
+
 .button {
   border: none;
   border-radius: 4px;
+  font-family: inherit;
+  text-align: center;
+}
+
+.button:hover {
+  cursor: pointer;
 }
 
 .order-service.button {
   background-color: var(--accent-color);
   color: var(--white-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  letter-spacing: 0.06em;
 }
 
 .button.filter {
   background-color: #f5f4fa;
   color: #212121;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
 }
 
 .button.filter:hover,
