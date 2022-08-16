@@ -1,19 +1,9 @@
-/* Палитра цветов
-#000000 - черный цвет логотипа
-#212121 - черный цвет заголовков
-#757575 - вторичный цвет (текст абзацев)
-#FFFFFF - белый цевет
-#2196F3 - цвет акцента
-#E5E5E5 - цвет заднего фона страницы
-#2f303a - цвет фона футера и героя 
-#F5F4FA -цвет фона Teams*/
-
 :root {
   --background-page-color: #e5e5e5;
-  --title-text-colore: #212121;
+  --title-text-color: #212121;
   --paragraph-text-color: #757575;
   --accent-color: #2196f3;
-  --black-text-colore: #000000;
+  --black-text-color: #000000;
   --white-text-color: #ffffff;
   --bgc-footer: #2f303a;
   --bgc-teams: #f5f4fa;
@@ -30,7 +20,7 @@
 }
 
 body {
-  color: var(--title-text-colore);
+  color: var(--title-text-color);
   background-color: var(--white-text-color);
   font-family: 'Roboto', sans-serif;
 }
@@ -44,11 +34,12 @@ body {
   letter-spacing: 0.03em;
 }
 .logo .part-logo {
-  color: var(--black-text-colore);
+  color: var(--black-text-color);
 }
 .logo .part-logo-footer {
   color: var(--white-text-color);
 }
+
 /* Шапка */
 .navigation .link.current {
   color: var(--accent-color);
@@ -58,7 +49,7 @@ body {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-colore);
+  color: var(--title-text-color);
 }
 .navigation .link:focus,
 .navigation .link:hover {
@@ -75,6 +66,7 @@ body {
 .header-contacts .link:hover {
   color: var(--accent-color);
 }
+
 /* Футер */
 .footer {
   background-color: var(--bgc-footer);
@@ -109,11 +101,14 @@ body {
 }
 
 /* Заголовки секций */
-.header-section {
+.section-header {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
+}
+.section-header.is-hidden {
+  display: none;
 }
 
 /* Секция наши качества*/
@@ -168,7 +163,6 @@ body {
 .button {
   border: none;
   border-radius: 4px;
-  font-family: inherit;
   text-align: center;
 }
 
